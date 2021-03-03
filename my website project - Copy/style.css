@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --clr-gray: #f1f1f9;
+  --clr-yellow: #E89C05;
+  --clr-blue: #0B13F2;
+  --clr-dark: #000;
+  --clr-white: #fff;
+
+  --font-size: 16px;
+}
+body{
+  margin: 0;
+  font-size: var(--font-size);
+  font-family: "monsterrat", sans-serif;
+}
+.main-header{
+  background-color: var(--clr-gray);
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+  padding-top: 1em;
+  margin-bottom: 4em;
+}
+ul li{
+  padding-right: 6em;
+  font-size: .9em;
+  font-weight: 600;
+  cursor: pointer;
+}
+li:first-child{
+  margin-right: auto;
+}
+.logo{
+  width: 70px;
+}
+.wrapper{
+  width: 50%;
+  margin: 4em;
+  margin: auto;
+}
+.hey{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+.hey-img{
+  margin-right: 1em;
+  width: 150px;
+}
+.name{
+  font-size: 2em;
+  font-weight: 900;
+}
+.p-main{
+  font-weight: 600;
+  font-size: 1.2em;
+}
+.web{
+  color: var(--clr-yellow);
+  font-family: "Buxton Sketch";
+  font-weight: bold;
+  font-size: 3em;
+}
+.making-better-world-link{
+  color: var(--clr-blue);
+  /* letter-spacing: .15em; */
+  cursor: pointer;
+}
+.aaron-img{
+  margin-top: 2.5em;
+}
+@media screen and (max-width:550px){
+  nav{
+    display: none;
+  }
+  .wrapper{
+    width: 80%;
+  }
+}
+
+/* about me section */
+.about-me-wrapper{
+  width: 50%;
+  margin: 4em auto;
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .about-me-wrapper{
+    width: 80%;
+  }
+}
+.p-about{
+  line-height: 2;
+  font-size: 1em;
+  font-family: "segoe ui";
+  font-weight: 500;
+  text-align: justify;
+}
+.header-about{
+  margin: 2em 0;
+  font-family: "segoe ui";
+  letter-spacing: .2em;
+}
+.h-about{
+  color: var(--clr-yellow);
+  text-transform: uppercase;
+}
+.nutshell{
+  width: 40%;
+  text-align: center;
+}
+
+/* what i can do section */
+.what-i-can-do{
+  background-color: var(--clr-gray);
+  padding: 1em;
+}
+.what-i-can-do h1{
+  text-align: center;
+  padding-top: 1.5em;
+}
+.wrapper-what-i-can-do{
+  margin: 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+}
+@media screen and (max-width:550px){
+  .wrapper-what-i-can-do{
+    margin: 2em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+  }
+  .what-i-can-do-content{
+    padding: 1em;
+  }
+}
+.what-i-can-do-content{
+  padding: 2em;
+  display: flex;
+  align-items:flex-start;
+}
+.p-what-i-can-do{
+  color: #707070;
+}
+.count-img{
+  width: 10%;
+  margin-right: 20px;
+}
+h3{
+  margin: 0;
+}
+p{
+  margin: 0;
+  line-height: 1.5;
+}
